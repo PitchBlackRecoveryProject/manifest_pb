@@ -5,7 +5,7 @@ You can send patches by using:
 
 Pull request, right here on git.
 
-Contact me on irc, Network: freenode, Channel: #twrp
+Contact @lj50036 on irc, Network: freenode, Channel: #twrp
 
 ## Maintaining Authorship ##
 ----------------------
