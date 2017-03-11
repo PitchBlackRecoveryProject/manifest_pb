@@ -34,6 +34,7 @@
   <project path="external/tinyalsa" name="android_external_tinyalsa" remote="omnirom" revision="android-7.1" groups="pdk" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="omnirom" revision="android-7.1" groups="pdk" />
   <project path="external/toybox" name="android_external_toybox" remote="omnirom" revision="android-7.1" groups="pdk" />
+  <project path="external/svox" name="android_external_svox" remote="omnirom" revision="android-7.1" groups="pdk-cw-fs,pdk-fs"/>
 
   <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-7.1" groups="pdk" />
   <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-7.1" groups="pdk-cw-fs" />
@@ -80,6 +81,7 @@
   <project path="packages/apps/QuickSearchBox" name="android_packages_apps_QuickSearchBox" remote="omnirom" revision="android-7.1" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="omnirom" revision="android-7.1" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="omnirom" revision="android-7.1" />
+  <project path="packages/apps/WallpaperPicker" name="android_packages_apps_WallpaperPicker" remote="omnirom" revision="android-7.1" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="omnirom" revision="android-7.1" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="omnirom" revision="android-7.1" groups="pdk-cw-fs" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="omnirom" revision="android-7.1" groups="pdk-cw-fs" />
