@@ -49,6 +49,7 @@
   <remove-project name="android_packages_apps_Gallery2" />
   <remove-project name="android_packages_apps_Interfacer" />
   <remove-project name="android_packages_apps_Launcher3" />
+  <remove-project name="android_packages_apps_Matlog" />
   <remove-project name="android_packages_apps_Messaging" />
   <remove-project name="android_packages_apps_MonthCalendarWidget" />
   <remove-project name="android_packages_apps_MusicFX" />
@@ -56,7 +57,9 @@
   <remove-project name="android_packages_apps_OmniClock" />
   <remove-project name="android_packages_apps_OmniGears" />
   <remove-project name="android_packages_apps_OmniStyle" />
+  <remove-project name="android_packages_apps_OmniSubs" />
   <remove-project name="android_packages_apps_OmniSwitch" />
+  <remove-project name="android_packages_apps_OmniTheme" />
   <remove-project name="android_packages_apps_OpenDelta" />
   <remove-project name="android_packages_apps_Phonograph" />
   <remove-project name="android_packages_apps_PackageInstaller" />
@@ -86,6 +89,7 @@
   <remove-project name="device/google/contexthub" />
   <remove-project name="device/sample" />
   <remove-project name="platform/abi/cpp" />
+  <remove-project name="platform/compatibility/cdd" />
   <remove-project name="platform/cts" />
   <remove-project name="platform/developers/build" />
   <remove-project name="platform/developers/demos" />
@@ -94,6 +98,7 @@
   <remove-project name="platform/external/ImageMagick" />
   <remove-project name="platform/external/aac" />
   <remove-project name="platform/external/android-clat" />
+  <remove-project name="platform/external/android-mock" />
   <remove-project name="platform/external/androidplot" />
   <remove-project name="platform/external/ant-glob" />
   <remove-project name="platform/external/antlr" />
@@ -135,6 +140,7 @@
   <remove-project name="platform/external/eclipse-windowbuilder" />
   <remove-project name="platform/external/eigen" />
   <remove-project name="platform/external/elfutils" />
+  <remove-project name="platform/external/embunit" />
   <remove-project name="platform/external/emma" />
   <remove-project name="platform/external/esd" />
   <remove-project name="platform/external/expat" />
@@ -173,6 +179,7 @@
   <remove-project name="platform/external/jdiff" />
   <remove-project name="platform/external/jetty" />
   <remove-project name="platform/external/jmdns" />
+  <remove-project name="platform/external/jmonkeyengine" />
   <remove-project name="platform/external/jsilver" />
   <remove-project name="platform/external/jsmn" />
   <remove-project name="platform/external/jsoncpp" />
@@ -212,6 +219,8 @@
   <remove-project name="platform/external/libyuv" />
   <remove-project name="platform/external/littlemock" />
   <remove-project name="platform/external/lld" />
+  <remove-project name="platform/external/lldb" />
+  <remove-project name="platform/external/marisa-trie" />
   <remove-project name="platform/external/markdown" />
   <remove-project name="platform/external/mdnsresponder" />
   <remove-project name="platform/external/mesa3d" />
@@ -237,7 +246,8 @@
   <remove-project name="platform/external/objenesis" />
   <remove-project name="platform/external/okhttp" />
   <remove-project name="platform/external/opencv" />
-  <remove-project name="platform/external/opencv3" />
+  <remove-project name="platform/external/openfst" />
+  <remove-project name="platform/external/openssh" />
   <remove-project name="platform/external/owasp/sanitizer" />
   <remove-project name="platform/external/parameter-framework" />
   <remove-project name="platform/external/pdfium" />
@@ -339,6 +349,7 @@
   <remove-project name="platform/packages/apps/Phone" />
   <remove-project name="platform/packages/apps/Protips" />
   <remove-project name="platform/packages/apps/Provision" />
+  <remove-project name="platform/packages/apps/RetailDemo" />
   <remove-project name="platform/packages/apps/SafetyRegulatoryInfo" />
   <remove-project name="platform/packages/apps/SoundRecorder" />
   <remove-project name="platform/packages/apps/SpareParts" />
@@ -410,6 +421,7 @@
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/weaved" />
   <remove-project name="platform/system/webservd" />
+  <remove-project name="platform/test/vts" />
   <remove-project name="platform/tools/external/fat32lib" />
   <remove-project name="platform/tools/external/gradle" />
   <remove-project name="platform/tools/test/connectivity" />
