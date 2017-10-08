@@ -12,7 +12,6 @@
   <remove-project name="android_external_libnfc-nci" />
   <remove-project name="android_external_libxml2" />
   <remove-project name="android_external_skia" />
-  <remove-project name="android_external_svox" groups="pdk-cw-fs,pdk-fs"/>
   <remove-project name="android_external_tinyalsa" />
   <remove-project name="android_external_tinycompress" />
   <remove-project name="android_frameworks_av" />
