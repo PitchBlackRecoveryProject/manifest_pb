@@ -270,6 +270,7 @@
   <remove-project name="platform/external/speex" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/srtp" />
+  <remove-project name="platform/external/svox" />
   <remove-project name="platform/external/tagsoup" />
   <remove-project name="platform/external/tcpdump" />
   <remove-project name="platform/external/testng" />
