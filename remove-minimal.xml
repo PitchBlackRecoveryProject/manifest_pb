@@ -12,7 +12,6 @@
   <remove-project name="android_external_libnfc-nci" />
   <remove-project name="android_external_libxml2" />
   <remove-project name="android_external_skia" />
-  <remove-project name="android_external_svox" groups="pdk-cw-fs,pdk-fs"/>
   <remove-project name="android_external_tinyalsa" />
   <remove-project name="android_external_tinycompress" />
   <remove-project name="android_frameworks_av" />
@@ -271,6 +270,7 @@
   <remove-project name="platform/external/speex" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/srtp" />
+  <remove-project name="platform/external/svox" />
   <remove-project name="platform/external/tagsoup" />
   <remove-project name="platform/external/tcpdump" />
   <remove-project name="platform/external/testng" />
