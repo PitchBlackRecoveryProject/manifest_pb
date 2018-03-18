@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remote  name="PitchBlackTWRP"
+           fetch="https://github.com/PitchBlackTWRP" />
 
 <!-- TWRP lives in omnirom android-8.1 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery" />
-    <project path="bootable/recovery" name="PitchBlackTWRP/android_bootable_recovery" revision="android-8.1" groups="pdk"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" revision="android-8.1" remote="PitchBlackTWRP"/>
 
 
 <!-- The following changes are no longer needed in 8.1 (only kept for reference) -->
