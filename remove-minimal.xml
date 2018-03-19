@@ -290,7 +290,6 @@
   <remove-project name="platform/external/vulkan-validation-layers" />
   <remove-project name="platform/external/webp" />
   <remove-project name="platform/external/webrtc" />
-  <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/external/xmlrpcpp" />
   <remove-project name="platform/external/xmlwriter" />
   <remove-project name="platform/external/xmp_toolkit" />
@@ -386,12 +385,10 @@
   <remove-project name="platform/prebuilts/eclipse" />
   <remove-project name="platform/prebuilts/eclipse-build-deps" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" />
