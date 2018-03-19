@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="PitchBlackTWRP"
+           fetch="https://github.com/PitchBlackTWRP" />
+
   <!-- FIRST: Remove unused/forked AOSP Projects -->
   <include name="remove.xml" />
 
@@ -12,7 +15,7 @@
   <!-- OmniROM Projects -->
   <project path="android" name="android" remote="omnirom" revision="android-7.1" />
 
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-8.1" groups="pdk-cw-fs"/>
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="android-8.1" groups="pdk-cw-fs"/>
 
   <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-7.1" />
   <project path="external/exfat" name="android_external_exfat" remote="omnirom" revision="android-7.1" />
