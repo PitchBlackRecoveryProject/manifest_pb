@@ -8,7 +8,10 @@
            fetch="https://github.com/omnirom"
            review="gerrit.omnirom.org" />
 
-  <project path="build" name="android_build" remote="omnirom" revision="android-7.1" groups="pdk,tradefed" >
+  <remote name="PitchBlackTWRP"
+           fetch="https://github.com/PitchBlackTWRP" />
+
+  <project path="build" name="android_build" remote="PitchBlackTWRP" revision="android-7.1" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
