@@ -7,11 +7,12 @@ Pull request, right here on git.
 
 Contact @lj50036 on irc, Network: freenode, Channel: #twrp
 
+
 ## Maintaining Authorship ##
 ----------------------
 Maintaining authorship is a very important aspect of working with Open Source code. If you wish to submit a patch/fix
 from anywhere else (another ROM, project, etc.), it is imperative that you maintain the ownership of the person whose
-work you're seeking to include. Doing so will ensure that credit is given where it is deserved, and the [prinicples of open source](http://opensource.org/docs/osd)
+work you are seeking to include. Doing so will ensure that credit is given where it is deserved, and the [prinicples of open source](http://opensource.org/docs/osd)
 are upheld. Your contribution to the project will still be recognized as you will forever be listed as the committer.
 
 If you manually cherry pick a patch/fix then you will need to add the original author prior to pushing to our [gerrit](https://gerrit.omnirom.org).
@@ -45,17 +46,26 @@ To get started with OMNI sources to build TWRP, you'll need to get
 familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the OMNIROM trees to build TWRP, use a command like this:
-
-    repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
-    
+```bash
+    repo init -u git://github.com/PitchBlackTWRP/manifest_pb.git -b twrp-8.1
+```
+ For Initial Low RAM Devices:
+```bash
+    repo init -u git://github.com/PitchBlackTWRP/manifest_pb.git -b twrp-6.0
+```
 To initialize a shallow clone, which will save even more space, use a command like this:
-
-    repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
-
+```bash
+    repo init --depth=1 -u git://github.com/PitchBlackTWRP/manifest_pb.git -b twrp-8.1
+```
+For Initial Low RAM Devices:
+```bash
+    repo init -u git://github.com/PitchBlackTWRP/manifest_pb.git -b twrp-6.0
+```
 Then to sync up:
 
     repo sync
 
 Then to build:
 
-     cd <source-dir>; . build/envsetup.sh; lunch omni_<device>-eng; mka recoveryimage
+     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_<device>-eng; mka recoveryimage
+
