@@ -1,5 +1,5 @@
-## Submitting Patches ##
-------------------
+Submitting Patches
+======
 Our project is open source, and patches are always welcome!
 You can send patches by using:
 
@@ -8,8 +8,8 @@ Pull request, right here on git.
 Contact @lj50036 on irc, Network: freenode, Channel: #twrp
 
 
-## Maintaining Authorship ##
-----------------------
+Maintaining Authorship
+======
 Maintaining authorship is a very important aspect of working with Open Source code. If you wish to submit a patch/fix
 from anywhere else (another ROM, project, etc.), it is imperative that you maintain the ownership of the person whose
 work you are seeking to include. Doing so will ensure that credit is given where it is deserved, and the [prinicples of open source](http://opensource.org/docs/osd)
@@ -39,8 +39,8 @@ This saves time, and when part of your normal routine, prevents the infamous "er
 let me fix it because I was found out!" message.
 
 
-## Getting Started ##
----------------
+Getting Started
+======
 
 To get started with OMNI sources to build TWRP, you'll need to get
 familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
@@ -62,10 +62,15 @@ For Initial Low RAM Devices:
     repo init -u git://github.com/PitchBlackTWRP/manifest_pb.git -b twrp-6.0
 ```
 Then to sync up:
-
-    repo sync
+```bash
+repo sync
+```
 
 Then to build:
-
-     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_<device>-eng; mka recoveryimage
-
+```bash
+     cd <source-dir>
+     export ALLOW_MISSING_DEPENDENCIES=true
+     . build/envsetup.sh
+     lunch omni_<device>-eng
+     mka recoveryimage
+```
