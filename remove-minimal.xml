@@ -2,7 +2,6 @@
 <manifest>
 
     <!-- Remove from default.xml -->
-    <remove-project name="platform/art" />
     <remove-project name="platform/compatibility/cdd" />
     <remove-project name="platform/cts" />
     <remove-project name="platform/dalvik" />
@@ -124,7 +123,6 @@
     <remove-project name="platform/external/libusb" />
     <remove-project name="platform/external/libusb-compat" />
     <remove-project name="platform/external/libvncserver" />
-    <remove-project name="platform/external/libvorbis" />
     <remove-project name="platform/external/libvpx" />
     <remove-project name="platform/external/libvterm" />
     <remove-project name="platform/external/libxml2" />
@@ -276,7 +274,6 @@
     <remove-project name="platform/packages/apps/SafetyRegulatoryInfo" />
     <remove-project name="platform/packages/apps/SoundRecorder" />
     <remove-project name="platform/packages/apps/SpareParts" />
-    <remove-project name="platform/packages/apps/Stk" />
     <remove-project name="platform/packages/apps/StorageManager" />
     <remove-project name="platform/packages/apps/Tag" />
     <remove-project name="platform/packages/apps/Terminal" />
@@ -396,6 +393,7 @@
 
 
     <!-- Remove from omni-aosp.xml (forked AOSP) -->
+    <remove-project name="android_art" />
     <remove-project name="android_development" />
 
     <remove-project name="android_external_aac" />
@@ -427,8 +425,11 @@
     <remove-project name="android_packages_apps_Messaging" />
     <remove-project name="android_packages_apps_MusicFX" />
     <remove-project name="android_packages_apps_Nfc" />
+    <remove-project name="android_packages_apps_OmniBrain" />
+    <remove-project name="android_packages_apps_OmniLib" />
     <remove-project name="android_packages_apps_PhoneCommon"  />
     <remove-project name="android_packages_apps_Settings" />
+    <remove-project name="android_packages_apps_Stk" />
     <remove-project name="android_packages_inputmethods_LatinIME" />
     <remove-project name="android_packages_providers_DownloadProvider" />
     <remove-project name="android_packages_services_Telecomm"  />
