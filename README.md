@@ -4,7 +4,7 @@ Getting Started
 To get started with PitchBlack Recovery, you'll need to get
 familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
-To initialize your local repository using the minimal-manifest-twrp trees omni to build PBRP, use a command like this:
+To initialize your local repository using the minimal-manifest-twrp omni trees to build PBRP, use a command like this:
 ```bash
 $ repo init -u git://github.com/PitchBlack-Recovery/manifest_pb.git -b PBRP
 ```
