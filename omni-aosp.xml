@@ -12,7 +12,7 @@
            review="gerrit.omnirom.org" />
 
   <remote  name="PitchBlackTWRP"
-           fetch="https://github.com/PitchBlack-Recovery" />
+           fetch="https://github.com/PitchBlackRecoveryProject" />
 
   <project path="art" name="android_art" remote="omnirom" revision="android-8.1" groups="pdk" />
   <project path="bionic" name="android_bionic" remote="omnirom" revision="android-8.1" groups="pdk" />
