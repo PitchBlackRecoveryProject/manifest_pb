@@ -14,7 +14,7 @@ $ repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b twr
 ```
 To initialize a shallow clone, which will save even more space, use a command like this:
 ```bash
-$ repo init --depth=1 -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -bPBRP
+$ repo init --depth=1 -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b PBRP
 ```
 For Initial Low RAM Devices:
 ```bash
