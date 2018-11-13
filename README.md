@@ -14,7 +14,7 @@ $ repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b twr
 ```
 To initialize a shallow clone, which will save even more space, use a command like this:
 ```bash
-$ repo init --depth=1 -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b PBRP
+$ repo init --depth=1 -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -bPBRP
 ```
 For Initial Low RAM Devices:
 ```bash
@@ -37,4 +37,10 @@ Then to build:
      $ lunch omni_<device>-eng
      
      $ mka recoveryimage
+```
+
+If it fails to build:
+```bash
+
+     $ export LC_ALL=C
 ```
