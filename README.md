@@ -23,13 +23,13 @@ An Open Source custom recovery for android
   <img src="https://img.shields.io/badge/version-2.9.0-green.svg?style=flat-square"
     alt="version">
 </a>
-<a href="https://github.com/PitchBlackRecoveryProject/android_bootable_recovery/blob/PBRP/LICENSE">
+<a href="#">
   <img src="https://img.shields.io/badge/base-twrp 3.2.3-orange.svg?style=flat-square"
     alt="base">
 </a>
 
 </a>
-<a href="#">
+<a href="https://github.com/PitchBlackRecoveryProject/android_bootable_recovery/blob/PBRP/LICENSE">
   <img src="https://img.shields.io/badge/license-apache%202.0-3F51B5.svg?style=flat-square"
     alt="base">
 </a>
