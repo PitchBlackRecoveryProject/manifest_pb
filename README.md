@@ -1,5 +1,46 @@
-Getting Started
-======
+<div align="center">
+<img src ="PitchBlack-Banner.png">
+</div>
+<h1 align="center">
+PitchBlack Recovery Project
+</h1>
+<h2 align="center">
+An Open Source custom recovery for android
+</h2>
+
+<div align="center">
+<a href="#">
+  <img src="https://img.shields.io/badge/platform-android-blue.svg?style=flat-square"
+    alt="platform" />
+</a>
+
+<a href="#">
+  <img src="https://img.shields.io/badge/build-stable-brightgreen.svg?style=flat-square"
+    alt="build" />
+</a>
+
+<a href="#">
+  <img src="https://img.shields.io/badge/version-2.9.0-green.svg?style=flat-square"
+    alt="version">
+</a>
+<a href="https://github.com/PitchBlackRecoveryProject/android_bootable_recovery/blob/PBRP/LICENSE">
+  <img src="https://img.shields.io/badge/base-twrp 3.2.3-orange.svg?style=flat-square"
+    alt="base">
+</a>
+
+</a>
+<a href="#">
+  <img src="https://img.shields.io/badge/license-apache%202.0-3F51B5.svg?style=flat-square"
+    alt="base">
+</a>
+
+</div>
+
+<br>
+<h3 align="center">
+Getting started
+</h3>
+<br>
 
 To get started with PitchBlack Recovery, you'll need to get
 familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
@@ -29,13 +70,13 @@ Then to build:
 ```bash
 
      $ cd <source-dir>
-     
+
      $ export ALLOW_MISSING_DEPENDENCIES=true
-     
+
      $ . build/envsetup.sh
-    
+
      $ lunch omni_<device>-eng
-     
+
      $ mka recoveryimage
 ```
 
