@@ -8,6 +8,7 @@
     <project path="bootable/recovery" name="android_bootable_recovery" revision="PBRP" remote="PitchBlackTWRP"/>
     <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
 	<linkfile src="pb_build.sh" dest="pb_build.sh" />
+	<linkfile src="pb_deploy.sh" dest="pb_deploy.sh" />
     </project>
 
 <!-- The following changes are no longer needed in 8.1 (only kept for reference) -->
