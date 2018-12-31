@@ -61,6 +61,10 @@ For Initial Low RAM Devices:
 ```bash
 $ repo init --depth=1 -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b twrp-6.0
 ```
+For Upgrade Encryption Devices i.e., POCO, Oneplus 6, Using Stock Oreo or Pie
+```bash
+$ repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b PBRP_android-9.0
+```
 Then to sync up:
 ```bash
 $ repo sync
