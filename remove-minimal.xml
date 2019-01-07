@@ -217,7 +217,7 @@
     <remove-project name="platform/frameworks/opt/net/lowpan" />
     <remove-project name="platform/frameworks/opt/net/voip" />
     <remove-project name="platform/frameworks/opt/photoviewer" />
-    <remove-project name="platform/frameworks/opt/setupwizard" />
+    <!--<remove-project name="platform/frameworks/opt/setupwizard" />-->
     <remove-project name="platform/frameworks/opt/timezonepicker" />
     <remove-project name="platform/frameworks/opt/vcard" />
     <remove-project name="platform/frameworks/support" />
