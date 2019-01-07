@@ -21,11 +21,7 @@
      So for those that do want to sync frameworks/base but don't want the build to break (eg framworks/support),
      sync it to the staging are and only link the needed directories.
 -->
-    <project path="TeamWin/.repo/frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-9.0" clone-depth="1" >
-        <linkfile src="core/java" dest="frameworks/base/core/java" />
-        <linkfile src="keystore/java" dest="frameworks/base/keystore/java" />
-        <linkfile src="libs/services" dest="frameworks/base/libs/services" />
-    </project>
+    <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-9.0" clone-depth="1" />
 
 <!-- Use OmniROM busybox -->
     <project path="external/busybox" name="TeamWin/android_external_busybox" remote="github" revision="android-9.0" />
