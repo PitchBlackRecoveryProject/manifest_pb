@@ -22,8 +22,4 @@
      sync it to the staging are and only link the needed directories.
 -->
     <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-9.0" clone-depth="1" />
-
-<!-- Use OmniROM busybox -->
-    <project path="external/busybox" name="TeamWin/android_external_busybox" remote="github" revision="android-9.0" />
-
 </manifest>
