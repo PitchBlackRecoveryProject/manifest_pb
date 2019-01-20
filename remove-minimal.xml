@@ -143,7 +143,6 @@
     <remove-project name="platform/external/oauth" />
     <remove-project name="platform/external/objenesis" />
     <remove-project name="platform/external/okhttp" />
-    <remove-project name="platform/external/opencv" />
     <remove-project name="platform/external/owasp/sanitizer" />
     <remove-project name="platform/external/parameter-framework" />
     <remove-project name="platform/external/pdfium" />
@@ -160,7 +159,7 @@
     <remove-project name="platform/external/seccomp-tests" />
     <remove-project name="platform/external/sfntly" />
     <remove-project name="platform/external/shflags" />
-    <remove-project name="platform/external/skia" />
+    <remove-project name="android_external_skia"/>
     <remove-project name="platform/external/sl4a" />
     <remove-project name="platform/external/slf4j" />
     <remove-project name="platform/external/smali" />
