@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote  name="PitchBlackTWRP"
-             fetch="https://github.com/PitchBlackRecoveryProject" />
+    <remote name="PitchBlackTWRP"
+            fetch="https://github.com/PitchBlackRecoveryProject"/>
 
-<!-- TWRP lives in omnirom android-9.0 (not AOSP!) -->
-    <remove-project name="platform/bootable/recovery" />
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="android-9.0" />
-    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
+    <!-- TWRP lives in omnirom android-9.0 (not AOSP!) -->
+    <remove-project name="platform/bootable/recovery"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="android-9.0"/>
+   <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
 	<linkfile src="pb_build.sh" dest="pb_build.sh" />
 	<linkfile src="pb_deploy.sh" dest="pb_deploy.sh" />
     </project>
-
-<!-- The following directories are actually needed from android_frameworks_base (for FBE decryption)
-     * frameworks/base/core/java   (~46MB)
-     * frameworks/base/keystore/java  (<1MB)
-     And for TWRP
-     * frameworks/base/libs/services  (<1MB)
-     not only is it not worth syncing a 1GB repo for ~47MB for me, the added dependencies make
-     the minimal manifest unworkable.
-     So for those that do want to sync frameworks/base but don't want the build to break (eg framworks/support),
-     sync it to the staging are and only link the needed directories.
--->
-    <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-9.0" clone-depth="1" />
 </manifest>
