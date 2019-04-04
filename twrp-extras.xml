@@ -10,4 +10,7 @@
 	<linkfile src="pb_build.sh" dest="pb_build.sh" />
 	<linkfile src="pb_deploy.sh" dest="pb_deploy.sh" />
     </project>
+	
+	<!-- Magiskboot -->
+    <project path="external/magisk-prebuilt" name="TeamWin/android_external_magisk-prebuilt" remote="github" />
 </manifest>
