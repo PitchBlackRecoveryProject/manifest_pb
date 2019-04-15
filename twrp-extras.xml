@@ -6,10 +6,7 @@
     <!-- TWRP lives in omnirom android-9.0 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="android-9.0"/>
-   <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
-	<linkfile src="pb_build.sh" dest="pb_build.sh" />
-	<linkfile src="pb_deploy.sh" dest="pb_deploy.sh" />
-    </project>
+    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="test" />
 	
 	<!-- Magiskboot -->
     <project path="external/magisk-prebuilt" name="TeamWin/external_magisk-prebuilt" revision="master" remote="github" />
