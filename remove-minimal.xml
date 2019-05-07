@@ -232,7 +232,6 @@
     <remove-project name="platform/hardware/qcom/keymaster"/>
 
     <remove-project name="platform/packages/apps/BasicSmsReceiver"/>
-    <remove-project name="platform/packages/apps/Bluetooth"/>
     <remove-project name="platform/packages/apps/Browser2"/>
     <remove-project name="platform/packages/apps/Camera2"/>
     <remove-project name="platform/packages/apps/CarrierConfig"/>
@@ -388,6 +387,7 @@
     <remove-project name="android_hardware_qcom_power"/>
     <remove-project name="android_hardware_qcom_wlan"/>
 
+    <remove-project name="android_packages_apps_Bluetooth"/>
     <remove-project name="android_packages_apps_Calendar"/>
     <remove-project name="android_packages_apps_CellBroadcastReceiver"/>
     <remove-project name="android_packages_apps_Contacts"/>
