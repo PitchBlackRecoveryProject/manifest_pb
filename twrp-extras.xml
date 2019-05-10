@@ -3,7 +3,7 @@
     <remote  name="PitchBlackRecoveryProject"
            fetch="https://github.com/PitchBlackRecoveryProject" />
 
-<!-- TWRP lives in omnirom android-8.1 (not AOSP!) -->
+<!-- PBRP lives in PBRP -->
     <remove-project name="platform/bootable/recovery" />
     <project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackRecoveryProject"/>
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" revision="master" remote="PitchBlackRecoveryProject" />
