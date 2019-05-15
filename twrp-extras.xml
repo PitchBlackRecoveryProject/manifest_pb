@@ -7,6 +7,9 @@
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="android-9.0"/>
     <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb" />
+
+        <!-- busybox -->
+    <project path="external/busybox" name="android_external_busybox" remote="PitchBlackTWRP" revision="android-9.0" />
 	
 	<!-- Magiskboot -->
     <project path="external/magisk-prebuilt" name="TeamWin/external_magisk-prebuilt" revision="master" remote="github" />
