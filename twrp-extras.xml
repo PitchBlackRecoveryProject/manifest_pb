@@ -50,9 +50,8 @@
         <linkfile src="core/java/android/security" dest="frameworks/base/core/java/android/security" />
     </project> />
 
-
 <!-- busybox -->
-    <project path="external/busybox" name="omnirom/android_external_busybox" remote="github" revision="android-8.1" />
+    <project path="external/busybox" name="android_external_busybox" remote="PitchBlackRecoveryProject" revision="android-8.1" />
 
 <!-- Magiskboot -->
     <project path="external/magisk-prebuilt" name="TeamWin/external_magisk-prebuilt" revision="master" remote="github" />
