@@ -12,5 +12,5 @@
     <project path="external/busybox" name="android_external_busybox" remote="PitchBlackTWRP" revision="android-9.0" />
 	
 	<!-- Magiskboot -->
-    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" revision="master" remote="PitchBlackTWRP" />
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackTWRP" revision="master" />
 </manifest>
