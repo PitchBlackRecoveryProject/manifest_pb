@@ -54,7 +54,7 @@
     <project path="external/busybox" name="android_external_busybox" remote="PitchBlackRecoveryProject" revision="android-8.1" />
 
 <!-- Magiskboot -->
-    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" revision="master" remote="PitchBlackTWRP" />
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
 
 <!-- Common -->
     <project path="device/qcom/common" name="android_device_qcom_common" remote="PitchBlackRecoveryProject" revision="android-8.0" />
