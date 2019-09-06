@@ -15,7 +15,7 @@
   <!-- OmniROM Projects -->
   <project path="android" name="android" remote="omnirom" revision="android-7.1" />
 
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="android-8.1" groups="pdk-cw-fs"/>
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="PBRP" groups="pdk-cw-fs"/>
   <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
 	<linkfile src="pb_build.sh" dest="pb_build.sh" />
   </project>
