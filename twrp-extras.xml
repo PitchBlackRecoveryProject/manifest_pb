@@ -3,6 +3,9 @@
     <remote name="PitchBlackTWRP"
             fetch="https://github.com/PitchBlackRecoveryProject"/>
 
+    <remote name="TeamWin"
+            fetch="https://github.com/TeamWin"/>
+
     <!-- TWRP lives in omnirom android-9.0 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="android-9.0"/>
