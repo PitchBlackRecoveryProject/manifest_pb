@@ -5,7 +5,7 @@
 
 <!-- TWRP lives in omnirom android-8.1 (not AOSP!) -->
     <!--<remove-project name="platform/bootable/recovery" /> -->
-    <project path="bootable/recovery" name="android_bootable_recovery" revision="PBRP" remote="PitchBlackTWRP"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackTWRP"/>
     <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
 	<linkfile src="pb_build.sh" dest="pb_build.sh" />
     </project>
