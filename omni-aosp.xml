@@ -9,7 +9,7 @@
            review="gerrit.omnirom.org" />
 
   <remote name="PitchBlackTWRP"
-           fetch="https://github.com/PitchBlackTWRP" />
+           fetch="https://github.com/PitchBlackRecoveryProject" />
 
   <project path="build" name="android_build" remote="PitchBlackTWRP" revision="android-7.1" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
