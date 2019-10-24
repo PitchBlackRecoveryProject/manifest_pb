@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote  name="PitchBlackTWRP"
-           fetch="https://github.com/PitchBlackTWRP" />
+           fetch="https://github.com/PitchBlackRecoveryProject" />
 
 <!-- TWRP lives in omnirom android-8.1 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery" />
@@ -50,7 +50,7 @@
     <project path="TeamWin/.repo/frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-8.1" clone-depth="1" >
         <linkfile src="core/java/android/content" dest="frameworks/base/core/java/android/content" />
         <linkfile src="core/java/android/security" dest="frameworks/base/core/java/android/security" />
-    </project> />
+    </project>
 
 
 <!-- busybox -->
