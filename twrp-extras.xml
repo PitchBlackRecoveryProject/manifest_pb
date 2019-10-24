@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote  name="PitchBlackTWRP"
-           fetch="https://github.com/PitchBlack-Recovery" />
+           fetch="https://github.com/PitchBlackRecoveryProject" />
 
 <!-- TWRP lives in omnirom android-8.1 (not AOSP!) -->
     <!--<remove-project name="platform/bootable/recovery" /> -->
