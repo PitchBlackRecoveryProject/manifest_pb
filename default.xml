@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="PitchBlackTWRP"
-           fetch="https://github.com/PitchBlackRecoveryProject" />
-
   <remote  name="github"
            fetch="https://github.com/" />
 
@@ -24,7 +21,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="PitchBlackTWRP" revision="android-6.0" groups="pdk" >
+  <project path="build" name="android_build" remote="omnirom" revision="android-6.0" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -32,7 +29,7 @@
   <!-- project path="abi/cpp" name="platform/abi/cpp" groups="pdk" /> -->
   <!-- project path="art" name="android_art" remote="omnirom" revision="android-6.0" groups="pdk" /> -->
   <project path="bionic" name="android_bionic" remote="omnirom" revision="android-6.0" groups="pdk" />
-  <!-- project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-8.1" groups="pdk-cw-fs"/>-->
+  <!--<project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-9.0" groups="pdk-cw-fs"/>-->
   <!-- project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" /> -->
   <!-- project path="dalvik" name="android_dalvik" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs" /> -->
   <!-- project path="developers/build" name="platform/developers/build" /> -->
@@ -74,7 +71,7 @@
   <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <!-- project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" /> -->
-  <!--<project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-6.0" />-->
+  <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-6.0" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <!-- project path="external/cblas" name="platform/external/cblas" groups="pdk" /> -->
   <!-- project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs,pdk-fs" /> -->
@@ -257,6 +254,7 @@
   <!-- project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" /> -->
   <project path="external/toybox" name="android_external_toybox" remote="omnirom" revision="android-6.0" groups="pdk" />
   <!-- project path="external/tremolo" name="platform/external/tremolo" groups="pdk" /> -->
+  <project path="external/unzip" name="android_external_unzip" remote="TeamWin" revision="cm-13.0" />
   <!-- project path="external/v8" name="platform/external/v8" groups="pdk" /> -->
   <!-- project path="external/valgrind" name="platform/external/valgrind" groups="pdk" /> -->
   <!-- project path="external/vboot_reference" name="platform/external/vboot_reference" groups="vboot" /> -->
@@ -451,7 +449,7 @@
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"  groups="pdk,linux" />
   <!-- project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" /> -->
   <!-- project path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" groups="pdk,linux,mips" /> -->
-  <!-- project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" /> -->
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" />
   <!-- project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs,pdk-fs" /> -->
   <!-- project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs,pdk-fs" /> -->
   <!-- project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs,pdk-fs" /> -->
@@ -488,6 +486,8 @@
   <!-- project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" /> -->
   <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-6.0" />
   <!-- project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-6.0" /> -->
-  <include name="twrp-extras.xml" />
+  
+  <!-- OmniROM -->
+  <include name="pbrp-default.xml" />
 
 </manifest>

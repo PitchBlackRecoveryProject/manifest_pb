@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote  name="PitchBlackTWRP"
+           fetch="https://github.com/PitchBlackRecoveryProject" />
+    
+	<project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackTWRP"/>
+    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
+		<linkfile src="pb_build.sh" dest="pb_build.sh" />
+    </project>
+
+</manifest>
