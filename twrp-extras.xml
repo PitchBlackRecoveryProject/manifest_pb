@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="PitchBlackTWRP"
+    <remote name="PitchBlackRecoveryProject"
             fetch="https://github.com/PitchBlackRecoveryProject"/>
 
     <remote name="TeamWin"
@@ -8,14 +8,14 @@
 
     <!-- TWRP lives in omnirom android-9.0 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery"/>
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="android-9.0"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-9.0"/>
     <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb" />
 
         <!-- busybox -->
-    <project path="external/busybox" name="android_external_busybox" remote="PitchBlackTWRP" revision="android-9.0" />
+    <project path="external/busybox" name="android_external_busybox" remote="PitchBlackRecoveryProject for" revision="android-9.0" />
 	
 	<!-- Magiskboot -->
-    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackTWRP" revision="master" />
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
 	
 <!-- Include TeamWin android_system_update_engine to build a good update_engine_sideload -->
     <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-9.0" />
