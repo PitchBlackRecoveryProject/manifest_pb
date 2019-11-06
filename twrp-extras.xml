@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote  name="PitchBlackTWRP"
+    <remote  name="PitchBlackRecoveryProject"
            fetch="https://github.com/PitchBlackRecoveryProject" />
 
 <!-- TWRP lives in omnirom android-8.1 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery" />
-    <project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackTWRP"/>
-    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
+    <project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackRecoveryProject"/>
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" revision="master" remote="PitchBlackRecoveryProject" />
+    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb">
 	<linkfile src="pb_build.sh" dest="pb_build.sh" />
     </project>
 
