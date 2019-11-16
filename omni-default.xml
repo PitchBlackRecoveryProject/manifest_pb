@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="PitchBlackTWRP"
+  <remote name="PitchBlackRecoveryProject"
            fetch="https://github.com/PitchBlackRecoveryProject" />
 
   <!-- FIRST: Remove unused/forked AOSP Projects -->
@@ -15,7 +15,8 @@
   <!-- OmniROM Projects -->
   <project path="android" name="android" remote="omnirom" revision="android-7.1" />
 
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackTWRP" revision="android-9.0" groups="pdk-cw-fs"/>
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-9.0" groups="pdk-cw-fs"/>
+  <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
   <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
 	<linkfile src="pb_build.sh" dest="pb_build.sh" />
   </project>
