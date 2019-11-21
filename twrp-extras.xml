@@ -57,4 +57,7 @@
 <!-- busybox -->
     <project path="external/busybox" name="TeamWin/android_external_busybox" remote="github" revision="android-8.0" />
 
+<!-- extra -->
+    <project path="system/core" name="android_system_core" remote="PitchBlackRecoveryProject" revision="android-8.1" />
+    <project path="system/hidl" name="android_system_hidl" remote="PitchBlackRecoveryProject" revision="android-8.1" />
 </manifest>
