@@ -399,6 +399,7 @@
     <remove-project name="android_packages_apps_MusicFX"/>
     <remove-project name="android_packages_apps_Nfc"/>
     <remove-project name="android_packages_apps_OmniBrain"/>
+    <remove-project name="android_packages_apps_OmniChromium"/>
     <remove-project name="android_packages_apps_OmniLib"/>
     <remove-project name="android_packages_apps_PhoneCommon"/>
     <remove-project name="android_packages_apps_Settings"/>
