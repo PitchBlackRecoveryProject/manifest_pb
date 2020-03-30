@@ -18,7 +18,7 @@
     <!-- Magiskboot -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
 	
-<!-- Include TeamWin android_system_update_engine to build a good update_engine_sideload -->
-    <!--<project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-9.0" />-->
+<!-- Include mauronofrio android_system_update_engine to build a good update_engine_sideload -->
+    <project path="system/update_engine" name="mauronofrio/android_system_update_engine" remote="github" revision="android-10" />
 </manifest>
 
