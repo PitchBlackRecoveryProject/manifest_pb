@@ -13,6 +13,8 @@
 
     <!-- busybox -->
     <project path="external/busybox" name="android_external_busybox" remote="PitchBlackRecoveryProject" revision="android-9.0" />
+    <remove-project name="android_external_zip" />
+    <project path="external/zip" name="android_external_zip" remote="PitchBlackRecoveryProject" revision="lineage-16.0" />
   
 <!-- Magiskboot -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
