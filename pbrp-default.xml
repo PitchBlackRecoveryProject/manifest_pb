@@ -9,6 +9,7 @@
 	</project>
 
 	<project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackRecoveryProject"/>
+	<project path="external/zip" name="android_external_zip" revision="cm-13.0" remote="PitchBlackRecoveryProject" />
 
 	<project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb">
 		<linkfile src="pb_build.sh" dest="pb_build.sh" />
