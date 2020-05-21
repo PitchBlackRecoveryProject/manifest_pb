@@ -59,6 +59,7 @@
 
 <!-- Use OmniROM busybox -->
     <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-8.1" />
+    <project path="external/zip" name="android_external_zip" remote="PitchBlackRecoveryProject" revision="lineage-15.1" />
 
 <!-- extra -->
     <project path="system/core" name="android_system_core" remote="PitchBlackRecoveryProject" revision="android-8.1" />
