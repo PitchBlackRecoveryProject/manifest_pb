@@ -63,7 +63,7 @@ $ repo init --depth=1 -u git://github.com/PitchBlackRecoveryProject/manifest_pb.
 ```
 For Upgrade Encryption Devices i.e., POCO, Oneplus 6, Using Stock Oreo or Pie with pie manifest
 ```bash
-$ repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
+$ repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
 ```
 Then to sync up:
 ```bash
