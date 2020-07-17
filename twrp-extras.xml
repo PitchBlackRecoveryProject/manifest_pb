@@ -7,18 +7,18 @@
             fetch="https://github.com/TeamWin"
             review="https://gerrit.twrp.me" />
 
-<!-- TWRP lives in TeamWin android-10.0 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-10.0"/>
+	<project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="PitchBlackRecoveryProject" revision="android-10.0" /> 
     <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb" />
 
-<!-- Include external Magisk repo for repack binaries -->
+	<!-- Include external Magisk repo for repack binaries -->
     <project path="external/zip" name="android_external_zip" remote="PitchBlackRecoveryProject" revision="lineage-16.0" />
   
     <!-- Magiskboot -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
 	
-<!-- Include mauronofrio android_system_update_engine to build a good update_engine_sideload -->
+	<!-- Include mauronofrio android_system_update_engine to build a good update_engine_sideload -->
     <project path="system/update_engine" name="mauronofrio/android_system_update_engine" remote="github" revision="android-10" />
 </manifest>
 
