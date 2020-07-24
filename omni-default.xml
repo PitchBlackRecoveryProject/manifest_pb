@@ -12,14 +12,12 @@
   <!-- Include forked CAF -->
   <include name="omni-caf.xml" />
 
+  <!-- Include extras-->
+  <include name="extras.xml" />
+
   <!-- OmniROM Projects -->
   <project path="android" name="android" remote="omnirom" revision="android-7.1" />
 
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-9.0" groups="pdk-cw-fs"/>
-  <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
-  <project path="vendor/pb" name="vendor_pb" remote="PitchBlackTWRP" revision="pb">
-	<linkfile src="pb_build.sh" dest="pb_build.sh" />
-  </project>
   <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-7.1" />
   <project path="external/exfat" name="android_external_exfat" remote="omnirom" revision="android-7.1" />
   <project path="external/fuse" name="android_external_fuse" remote="omnirom" revision="android-7.1" />
