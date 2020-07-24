@@ -10,6 +10,10 @@
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-9.0"/>
     <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb" />
+    <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb">
+        <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
+    </project>
+    
 
     <!-- External Packages -->
     <project path="external/busybox" name="android_external_busybox" remote="PitchBlackRecoveryProject" revision="android-9.0" />
