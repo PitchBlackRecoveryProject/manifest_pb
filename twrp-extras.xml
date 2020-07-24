@@ -10,8 +10,10 @@
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-10.0"/>
 	<project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="PitchBlackRecoveryProject" revision="android-10.0" /> 
-    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb" />
-
+    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb-10.0" />
+    <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb">
+        <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
+    </project>
 	<!-- Include external Magisk repo for repack binaries -->
     <project path="external/zip" name="android_external_zip" remote="PitchBlackRecoveryProject" revision="lineage-16.0" />
   
