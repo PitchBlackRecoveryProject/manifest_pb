@@ -11,8 +11,9 @@
 	<project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackRecoveryProject"/>
 	<project path="external/zip" name="android_external_zip" revision="cm-13.0" remote="PitchBlackRecoveryProject" />
 
-	<project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb">
-		<linkfile src="pb_build.sh" dest="pb_build.sh" />
+	<project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb" />
+	<project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb">
+		<linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
 	</project>
 
 	<project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
