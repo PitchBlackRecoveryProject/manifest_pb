@@ -3,12 +3,13 @@
     <remote  name="PitchBlackRecoveryProject"
            fetch="https://github.com/PitchBlackRecoveryProject" />
 
-<!-- PBRP lives in PBRP -->
+    <!-- PBRP lives in PBRP -->
     <remove-project name="platform/bootable/recovery" />
     <project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackRecoveryProject"/>
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" revision="master" remote="PitchBlackRecoveryProject" />
-    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb">
-	<linkfile src="pb_build.sh" dest="pb_build.sh" />
+    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb" />
+    <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb">
+        <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>
 
 <!-- The following changes are no longer needed in 8.1 (only kept for reference) -->
