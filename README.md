@@ -24,7 +24,7 @@ An Open Source custom recovery for android
     alt="version">
 </a>
 <a href="#">
-  <img src="https://img.shields.io/badge/base-twrp 3.2.3-orange.svg?style=flat-square"
+  <img src="https://img.shields.io/badge/base-twrp 3.4.0-orange.svg?style=flat-square"
     alt="base">
 </a>
 
