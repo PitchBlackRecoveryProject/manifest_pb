@@ -20,7 +20,7 @@ An Open Source custom recovery for android
 </a>
 
 <a href="#">
-  <img src="https://img.shields.io/badge/version-2.9.0-green.svg?style=flat-square"
+  <img src="https://img.shields.io/badge/version-3.0.0-green.svg?style=flat-square"
     alt="version">
 </a>
 <a href="#">
