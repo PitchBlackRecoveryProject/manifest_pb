@@ -21,6 +21,9 @@
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
 	
 	<!-- Include mauronofrio android_system_update_engine to build a good update_engine_sideload -->
-    <project path="system/update_engine" name="mauronofrio/android_system_update_engine" remote="github" revision="android-10" />
+    <project path="system/update_engine" name="android_system_update_engine" remote="PitchBlackRecoveryProject" revision="android-10" />
+
+    <project path="system/tools/dtbtool" name="LineageOS/android_system_tools_dtbtool" revision="lineage-17.1" remote="github"/>
+    <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" revision="lineage-17.1" remote="github" clone-depth="1" />
 </manifest>
 
