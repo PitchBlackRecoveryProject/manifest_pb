@@ -1,3 +1,7 @@
+<a href="README.md" >Go Back</a>
+
+### omni_device.mk sample
+
 ```bash
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk) -- only for 64bit phones

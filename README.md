@@ -31,7 +31,7 @@
     <img src="https://img.shields.io/badge/$-donate-orange.svg?maxAge=2592000&amp;style=flat">
   </a>
 
-  <a href="https://saythanks.io/to/pitchblackrecovery">
+  <a href="https://saythanks.io/to/pitchblackrecovery%40gmail.com">
       <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
   </a>
   <a href="https://github.com/PitchBlackRecoveryProject/android_bootable_recovery/blob/android-9.0/LICENSE" target="_blank">
