@@ -25,6 +25,9 @@
     <!-- Magiskboot -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
 
+    <!-- Include external/nano for nano support -->
+    <project path="external/nano" name="android_external_nano" remote="LineageOS" revision="lineage-17.1" />
+    
     <!-- Include ntfs_3g for NTFS support -->
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-17.1" />
 	
