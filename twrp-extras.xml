@@ -3,6 +3,10 @@
     <remote  name="PitchBlackRecoveryProject"
            fetch="https://github.com/PitchBlackRecoveryProject" />
 
+    <remote name="LineageOS"
+            fetch="https://github.com/LineageOS"
+            review="https://review.lineageos.org" />
+
     <!-- PBRP lives in PBRP -->
     <remove-project name="platform/bootable/recovery" />
     <project path="bootable/recovery" name="android_bootable_recovery" revision="android-9.0" remote="PitchBlackRecoveryProject"/>
@@ -65,4 +69,8 @@
 <!-- extra -->
     <project path="system/core" name="android_system_core" remote="PitchBlackRecoveryProject" revision="android-8.1" />
     <project path="system/libhidl" name="android_system_libhidl" remote="PitchBlackRecoveryProject" revision="android-8.1" />
+
+<!-- Include external LineageOS repos for nano -->
+    <project name="android_external_nano" path="external/nano" remote="LineageOS" revision="lineage-15.1" />
+    <project name="android_external_libncurses" path="external/libncurses" remote="LineageOS" revision="lineage-15.1" />
 </manifest>
