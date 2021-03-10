@@ -70,7 +70,8 @@
     <project path="system/core" name="android_system_core" remote="PitchBlackRecoveryProject" revision="android-8.1" />
     <project path="system/libhidl" name="android_system_libhidl" remote="PitchBlackRecoveryProject" revision="android-8.1" />
 
-<!-- Include external LineageOS repos for nano -->
+<!-- Include external LineageOS repos for bash & nano -->
+    <project name="android_external_bash" path="external/bash" remote="LineageOS" revision="lineage-15.1" />
     <project name="android_external_nano" path="external/nano" remote="LineageOS" revision="lineage-15.1" />
     <project name="android_external_libncurses" path="external/libncurses" remote="LineageOS" revision="lineage-15.1" />
 </manifest>
