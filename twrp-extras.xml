@@ -7,6 +7,10 @@
             fetch="https://github.com/TeamWin"
             review="https://gerrit.twrp.me" />
 
+    <remote name="LineageOS"
+            fetch="https://github.com/LineageOS"
+            review="https://review.lineageos.org" />
+
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-10.0"/>
 	<project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="PitchBlackRecoveryProject" revision="android-10.0" /> 
@@ -14,13 +18,17 @@
     <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb">
         <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>
-	<!-- Include external Magisk repo for repack binaries -->
+
+    <!-- Include external Magisk repo for repack binaries -->
     <project path="external/zip" name="android_external_zip" remote="PitchBlackRecoveryProject" revision="lineage-16.0" />
   
     <!-- Magiskboot -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
+
+    <!-- Include ntfs_3g for NTFS support -->
+    <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-17.1" />
 	
-	<!-- Include mauronofrio android_system_update_engine to build a good update_engine_sideload -->
+    <!-- Include mauronofrio android_system_update_engine to build a good update_engine_sideload -->
     <project path="system/update_engine" name="android_system_update_engine" remote="PitchBlackRecoveryProject" revision="android-10" />
 
     <project path="system/tools/dtbtool" name="LineageOS/android_system_tools_dtbtool" revision="lineage-17.1" remote="github"/>
