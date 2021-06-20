@@ -12,7 +12,7 @@
 
 <p align="center">
 <a>
-  <img alt="Version" src="https://img.shields.io/badge/version-3.0.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-3.1.0-blue.svg?cacheSeconds=2592000" />
   </a>
 
 <a>
