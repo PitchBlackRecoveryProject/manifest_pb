@@ -30,7 +30,7 @@
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="android-11.0" />
 
     <!-- General -->
-    <project path="bootable/recovery" name="pbrp_recovery_secrets" remote="PitchBlackRecoveryProject" revision="android-11.0"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-11.0"/>
 
     <!-- System -->
     <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" revision="android-11.0" />
