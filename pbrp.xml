@@ -9,7 +9,8 @@
 
     <remote name="LineageOS"
             fetch="https://github.com/LineageOS"
-            review="https://review.lineageos.org" />
+            review="https://review.lineageos.org"
+            revision="lineage-18.1" />
 
     <project path="build/make" name="android_build" remote="PitchBlackRecoveryProject" revision="android-11.0" groups="pdk" >
       <copyfile src="core/root.mk" dest="Makefile" />
@@ -35,6 +36,7 @@
     <!-- System -->
     <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" revision="android-11.0" />
     <project path="system/libhidl" name="android_system_libhidl" remote="PitchBlackRecoveryProject" revision="android-11.0" />
+    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" />
 
     <!-- Vendor -->
     <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb-11.0" />
