@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="PitchBlackRecoveryProject"
-            fetch="https://github.com/PitchBlackRecoveryProject"/>
+            fetch="https://github.com/PitchBlackRecoveryProject" />
 
     <remote name="TeamWin"
             fetch="https://github.com/TeamWin"
@@ -9,8 +9,13 @@
 
     <remote name="LineageOS"
             fetch="https://github.com/LineageOS"
-            review="https://review.lineageos.org"
-            revision="lineage-18.1" />
+            review="https://review.lineageos.org" />
+
+    <remote name="github"
+            fetch="https://github.com" />
+
+    <!-- PitchBlack lives in PitchBlackRecoveryProject android-11 (not AOSP!) -->
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-11.0" />
 
     <project path="build/make" name="android_build" remote="PitchBlackRecoveryProject" revision="android-11.0" groups="pdk" >
       <copyfile src="core/root.mk" dest="Makefile" />
@@ -21,25 +26,37 @@
       <linkfile src="target" dest="build/target" />
       <linkfile src="tools" dest="build/tools" />
     </project>
+
     <project path="build/soong" name="android_build_soong" remote="PitchBlackRecoveryProject" revision="android-11.0" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
 
-    <!-- External -->
     <project path="external/bouncycastle" name="external_bouncycastle" remote="PitchBlackRecoveryProject" revision="android-11.0" />
+
+    <!-- Include external Magisk repo for repack binaries -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="android-11.0" />
 
-    <!-- General -->
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-11.0"/>
+    <!-- Include ntfs_3g for NTFS support -->
+    <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1" />
+
+    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TeamWin" revision="android-11" />
 
     <!-- System -->
     <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" revision="android-11.0" />
     <project path="system/libhidl" name="android_system_libhidl" remote="PitchBlackRecoveryProject" revision="android-11.0" />
-    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" />
+    <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-11" />
 
-    <!-- Vendor -->
-    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb-11.0" />
+    <!-- Include lineage-tools for lzma support -->
+    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" revision="lineage-18.1" />
+
+    <!-- Use PitchBlack repos for full recovery compatibility -->
+    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb-11.0" >
+       <copyfile src="dummy/Android.mk" dest="frameworks/base/core/xsd/vts/Android.mk" />
+       <copyfile src="dummy/Android.mk" dest="frameworks/base/services/core/xsd/vts/Android.mk" />
+       <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/compatibilityMatrix/vts/Android.mk" />
+       <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/halManifest/vts/Android.mk" />
+    </project>
     <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb" >
         <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>

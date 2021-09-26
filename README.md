@@ -26,7 +26,7 @@
   <a href="https://pitchblackrecovery.com/docs" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  
+
   <a href="https://www.patreon.com/pitchblackrecovery">
     <img src="https://img.shields.io/badge/$-donate-orange.svg?maxAge=2592000&amp;style=flat">
   </a>
@@ -78,14 +78,20 @@
   - Password Recovery etc
 
 ## How To Build
+To get started with AOSP sources to build PitchBlack, you'll need to get familiar
+with [Git and Repo](https://source.android.com/source/using-repo.html).
 
-
-```bash
-# Initialize the latest stable branch
-$ repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb -b android-11.0
-
-# Sync the latest stable branch
-$ repo sync
+To initialize your local repository using the AOSP trees to build PitchBlack, use a command like this:
+```
+repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb -b android-11.0
+```
+To initialize a shallow clone, which will save even more space, use a command like this:
+```
+repo init --depth=1 -u git://github.com/PitchBlackRecoveryProject/manifest_pb -b android-11.0
+```
+Sync the latest stable branch
+```
+repo sync
 ```
 
 Follow our omni_device.mk sample
@@ -98,7 +104,7 @@ Follow our omni_device.mk sample
 $ cd <source-dir>
 $ . build/envsetup.sh
 $ lunch omni_<device>-eng
-$ mka recoveryimage
+$ mka pbrp
 ````
 
 ## Become Official Maintainer
