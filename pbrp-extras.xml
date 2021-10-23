@@ -37,7 +37,7 @@
     <!-- Include external Magisk repo for repack binaries -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="android-11.0" />
 
-    <!-- Include external Magisk repo for repack binaries -->
+    <!-- Include TeamWin sepolicy repo for postinstall support -->
     <project path="system/sepolicy" name="android_system_sepolicy" remote="TeamWin" revision="android-11"/>
 
     <!-- Include ntfs_3g for NTFS support -->
