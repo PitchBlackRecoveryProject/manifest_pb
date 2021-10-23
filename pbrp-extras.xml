@@ -37,6 +37,9 @@
     <!-- Include external Magisk repo for repack binaries -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="android-11.0" />
 
+    <!-- Include external Magisk repo for repack binaries -->
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="TeamWin" revision="android-11"/>
+
     <!-- Include ntfs_3g for NTFS support -->
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1" />
 
