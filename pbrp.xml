@@ -30,6 +30,9 @@
     <project path="external/bouncycastle" name="external_bouncycastle" remote="PitchBlackRecoveryProject" revision="android-11.0" />
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="android-11.0" />
 
+    <!-- Include phh's treble repo for lptools support -->
+    <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
+
     <!-- General -->
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-11.0"/>
 
