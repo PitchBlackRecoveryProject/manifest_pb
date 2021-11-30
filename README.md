@@ -98,7 +98,7 @@ Follow our omni_device.mk sample
 $ cd <source-dir>
 $ . build/envsetup.sh
 $ lunch omni_<device>-eng
-$ mka recoveryimage
+$ mka pbrp
 ````
 
 ## Become Official Maintainer
