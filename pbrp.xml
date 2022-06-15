@@ -39,6 +39,7 @@
     <!-- System -->
     <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" revision="android-11.0" />
     <project path="system/libhidl" name="android_system_libhidl" remote="PitchBlackRecoveryProject" revision="android-11.0" />
+	<project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-11"/>
     <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" />
 
     <!-- Vendor -->
