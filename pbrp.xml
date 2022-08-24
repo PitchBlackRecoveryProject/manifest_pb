@@ -5,14 +5,37 @@
 
     <remote name="TeamWin"
             fetch="https://github.com/TeamWin"
-            review="https://gerrit.twrp.me" />
+            review="https://gerrit.twrp.me" 
+            revision="android-12.1"/>
 
     <remote name="LineageOS"
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org"
-            revision="lineage-18.1" />
+            revision="lineage-19.1" />
 
-    <project path="build/make" name="android_build" remote="PitchBlackRecoveryProject" revision="android-11.0" groups="pdk" >
+    <remote name="github"
+            fetch="https://github.com"/>
+
+    <!-- We need the TeamWin forks of these repos -->
+    <remove-project name="platform/bootable/recovery"/>
+
+    <remove-project name="platform/build" />
+    <remove-project name="platform/build/soong" />
+
+    <remove-project name="platform/external/icu" />
+    <remove-project name="platform/external/libxml2" />
+    <remove-project name="platform/external/sqlite" />
+
+    <remove-project name="platform/packages/modules/adb" />
+
+    <remove-project name="platform/system/core" />
+    <remove-project name="platform/system/libhidl" />
+    <remove-project name="platform/system/libhwbinder" />
+    <remove-project name="platform/system/security" />
+    <remove-project name="platform/system/update_engine" />
+    <remove-project name="platform/system/vold" />
+
+    <project path="build/make" name="android_build" remote="PitchBlackRecoveryProject" revision="android-12.1" groups="pdk" >
       <copyfile src="core/root.mk" dest="Makefile" />
       <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
       <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -21,38 +44,45 @@
       <linkfile src="target" dest="build/target" />
       <linkfile src="tools" dest="build/tools" />
     </project>
-    <project path="build/soong" name="android_build_soong" remote="PitchBlackRecoveryProject" revision="android-11.0" >
+    <project path="build/soong" name="android_build_soong" remote="PitchBlackRecoveryProject" revision="android-12.1" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
 
     <!-- External -->
-    <project path="external/bouncycastle" name="external_bouncycastle" remote="PitchBlackRecoveryProject" revision="android-11.0" />
-    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="android-11.0" />
+    <project path="external/icu" name="android_external_icu" remote="TeamWin"/>
+    <project path="external/libxml2" name="android_external_libxml2" remote="TeamWin"/>
+    <project path="external/sqlite" name="android_external_sqlite" remote="TeamWin"/>
+    <project path="packages/modules/adb" name="android_packages_modules_adb" remote="TeamWin"/>
 
     <!-- Include phh's treble repo for lptools support -->
     <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
 
     <!-- General -->
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-11.0"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-12.1"/>
 
     <!-- System -->
-    <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" revision="android-11.0" />
-    <project path="system/libhidl" name="android_system_libhidl" remote="PitchBlackRecoveryProject" revision="android-11.0" />
-	<project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-11"/>
+    <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" revision="android-12.1" />
+    <project path="system/libhidl" name="android_system_libhidl" remote="PitchBlackRecoveryProject" revision="android-12.1" />
+    <project path="system/libhwbinder" name="android_system_libhwbinder" remote="PitchBlackRecoveryProject"/>
+    <project path="system/security" name="android_system_security" remote="PitchBlackRecoveryProject"/>
+    <project path="system/vold" name="android_system_vold" remote="PitchBlackRecoveryProject"/>
+    <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin"/>
     <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" />
 
     <!-- Vendor -->
-    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb-11.0" />
+    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb-12.1" />
     <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb" >
         <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>
-    <project name="android_device_qcom_common" path="device/qcom/common" remote="TeamWin" revision="android-11" />
-    <project name="android_device_qcom_twrp-common" path="device/qcom/twrp-common" remote="TeamWin" revision="android-11" />
-    <project name="android_hardware_qcom_bootctrl" path="hardware/qcom-caf/bootctrl" remote="LineageOS" revision="lineage-18.1-caf" />
-    <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" remote="LineageOS" revision="lineage-18.1" />
-    <project name="android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="LineageOS" revision="lineage-18.1" />
-    <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="LineageOS" revision="lineage-18.1" />
-    <project name="android_vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="LineageOS" revision="lineage-18.1" />
+    <project name="android_device_qcom_common" path="device/qcom/common" remote="TeamWin"/>
+    <project name="android_device_qcom_twrp-common" path="device/qcom/twrp-common" remote="TeamWin" />
+    <project name="android_hardware_qcom_bootctrl" path="hardware/qcom-caf/bootctrl" remote="LineageOS" revision="lineage-19.1-caf" />
+    <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" remote="LineageOS" revision="lineage-19.1" />
+    <project name="android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="LineageOS" revision="lineage-19.1" />
+    <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="LineageOS" revision="lineage-19.1" />
+    <project name="android_vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="LineageOS" revision="lineage-19.1" />
 
+    <!-- LAST: Remove unused projects for minimal manifest -->
+    <include name="remove-minimal.xml"/>
 </manifest>
