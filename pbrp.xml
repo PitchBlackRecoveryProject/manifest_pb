@@ -71,8 +71,8 @@
 
     <!-- System -->
     <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" revision="android-12.1" />
-    <project path="system/libhidl" name="android_system_libhidl" remote="PitchBlackRecoveryProject" revision="android-12.1" />
-    <project path="system/libhwbinder" name="android_system_libhwbinder" remote="PitchBlackRecoveryProject"/>
+    <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-12.1" />
+    <project path="system/libhwbinder" name="android_system_libhwbinder" remote="TeamWin"/>
     <project path="system/security" name="android_system_security" remote="PitchBlackRecoveryProject"/>
     <project path="system/vold" name="android_system_vold" remote="PitchBlackRecoveryProject"/>
     <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin"/>
