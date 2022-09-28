@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="PitchBlackRecoveryProject"
-            fetch="https://github.com/PitchBlackRecoveryProject"/>
+            fetch="https://github.com/PitchBlackRecoveryProject"
+            revision="android-12.1"/>
 
     <remote name="TeamWin"
             fetch="https://github.com/TeamWin"
@@ -42,7 +43,7 @@
     <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
 
-    <project path="build/make" name="android_build" remote="PitchBlackRecoveryProject" revision="android-12.1" groups="pdk" >
+    <project path="build/make" name="android_build" remote="PitchBlackRecoveryProject" groups="pdk" >
       <copyfile src="core/root.mk" dest="Makefile" />
       <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
       <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -51,7 +52,7 @@
       <linkfile src="target" dest="build/target" />
       <linkfile src="tools" dest="build/tools" />
     </project>
-    <project path="build/soong" name="android_build_soong" remote="PitchBlackRecoveryProject" revision="android-12.1" >
+    <project path="build/soong" name="android_build_soong" remote="PitchBlackRecoveryProject" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
@@ -70,10 +71,10 @@
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-12.1"/>
 
     <!-- General -->
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-12.1"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" />
 
     <!-- System -->
-    <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" revision="android-12.1" />
+    <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" />
     <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-12.1" />
     <project path="system/libhwbinder" name="android_system_libhwbinder" remote="TeamWin"/>
     <project path="system/security" name="android_system_security" remote="PitchBlackRecoveryProject"/>
