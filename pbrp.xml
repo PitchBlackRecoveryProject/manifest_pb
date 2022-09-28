@@ -66,6 +66,9 @@
     <!-- Include phh's treble repo for lptools support -->
     <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
 
+    <!-- Include external Magisk repo for repack binaries -->
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-12.1"/>
+
     <!-- General -->
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-12.1"/>
 
