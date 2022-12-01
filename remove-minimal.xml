@@ -246,7 +246,6 @@
   <remove-project name="platform/external/okhttp" />
   <remove-project name="platform/external/opencv" />
   <remove-project name="platform/external/openfst" />
-  <remove-project name="platform/external/openssh" />
   <remove-project name="platform/external/owasp/sanitizer" />
   <remove-project name="platform/external/parameter-framework" />
   <remove-project name="platform/external/pdfium" />

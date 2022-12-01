@@ -3,12 +3,27 @@
     <remote name="PitchBlackRecoveryProject"
             fetch="https://github.com/PitchBlackRecoveryProject"/>
 
+    <remote name="TeamWin"
+            fetch="https://github.com/TeamWin"
+            review="https://gerrit.twrp.me" />
+
+    <remote name="LineageOS"
+            fetch="https://github.com/LineageOS"
+            review="https://review.lineageos.org" />
+
     <!-- TWRP lives in omnirom android-9.0 (not AOSP!) -->
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-9.0"/>
     <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb" />
     <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb">
         <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>
+
+    <!-- Include forked external unzip repo from CyanogenMod for toolbox/toybox support -->
+    <project path="external/unzip" name="android_external_unzip" remote="TeamWin" revision="cm-14.1" />
+
+    <!-- Include external LineageOS repos for nano -->
+    <project name="android_external_nano" path="external/nano" remote="LineageOS" revision="cm-14.1" />
+    <project name="android_external_libncurses" path="external/libncurses" remote="LineageOS" revision="cm-14.1" />
 
     <!-- Magiskboot -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="master" />
