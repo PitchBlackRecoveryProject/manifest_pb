@@ -86,7 +86,9 @@
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="LineageOS" revision="lineage-19.1" />
 
     <!-- Vendor -->
-    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb-12.1" />
+    <project path="vendor/pb" name="vendor_pb" remote="PitchBlackRecoveryProject" revision="pb-12.1">
+        <linkfile src="config/common.mk" dest="vendor/twrp/config/common.mk" />
+    </project>
     <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb" >
         <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>
