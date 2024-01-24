@@ -1,6 +1,6 @@
 <a href="README.md" >Go Back</a>
 
-### omni_device.mk sample
+### pb_device.mk sample
 
 ```bash
 # Inherit from those products. Most specific first.
@@ -16,7 +16,7 @@ $(call inherit-product, vendor/pb/config/common.mk)
 BOARD_VENDOR := 
 PRODUCT_BRAND := 
 PRODUCT_DEVICE := 
-PRODUCT_NAME := omni_device
+PRODUCT_NAME := pb_device
 PRODUCT_MANUFACTURER := 
 PRODUCT_MODEL := 
 TARGET_VENDOR := 

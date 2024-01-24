@@ -88,16 +88,16 @@ $ repo init -u https://github.com/PitchBlackRecoveryProject/manifest_pb -b andro
 $ repo sync
 ```
 
-Follow our omni_device.mk sample
+Follow our pb_device.mk sample
 
-📱 <a href="omni_device.mk.sample.md" target = "_blank">omni_device.mk sample</a>
+📱 <a href="pb_device.mk.sample.md" target = "_blank">pb_device.mk sample</a>
 
 ⚙️ Build
 
 ```bash
 $ cd <source-dir>
 $ . build/envsetup.sh
-$ lunch omni_<device>-eng
+$ lunch pb_<device>-eng
 $ mka pbrp
 ````
 
