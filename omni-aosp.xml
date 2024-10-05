@@ -42,7 +42,7 @@
   <project path="external/toybox" name="android_external_toybox" remote="omnirom" revision="android-10" />
 
   <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-10" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-10" />
+  <project path="frameworks/base" name="android_frameworks_base_old" remote="omnirom" revision="android-10" />
   <project path="frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-10" />
   <project path="frameworks/opt/chips" name="android_frameworks_opt_chips" remote="omnirom" revision="android-10" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="omnirom" revision="android-10" />
@@ -98,7 +98,7 @@
 
   <project path="system/bpf" name="android_system_bpf" remote="omnirom" revision="android-10" /> -->
   <project path="system/bt" name="android_system_bt" remote="omnirom" revision="android-10" />
-  <project path="system/core" name="android_system_core" remote="PitchBlackTWRP" revision="android-10.0" />
+  <project path="system/core" name="android_system_core_old" remote="PitchBlackTWRP" revision="android-10.0" />
   <project path="system/extras" name="android_system_extras" remote="omnirom" revision="android-10" />
   <project path="system/libhidl" name="android_system_libhidl" remote="omnirom" revision="android-10" />
   <project path="system/media" name="android_system_media" remote="omnirom" revision="android-10" />
