@@ -28,6 +28,7 @@
     <remove-project name="platform/packages/modules/adb" />
 
     <remove-project name="platform/system/core" />
+    <remove-project name="platform/system/extras" />
     <remove-project name="platform/system/libhidl" />
     <remove-project name="platform/system/libhwbinder" />
     <remove-project name="platform/system/security" />
@@ -63,7 +64,9 @@
     <project path="external/python3" name="android_external_python3" remote="TeamWin" revision="android-12.1"/>
     <project path="external/sqlite" name="android_external_sqlite" remote="TeamWin" revision="android-12.1"/>
     <project path="packages/modules/adb" name="android_packages_modules_adb" remote="TeamWin" revision="android-12.1"/>
+
     <project path="system/core" name="android_system_core" remote="PitchBlackRecoveryProject" revision="android-12.1"/>
+    <project path="system/extras" name="android_system_extras" remote="TeamWin" revision="android-12.1"/>
     <project path="system/libhidl" name="android_system_libhidl" remote="TeamWin" revision="android-12.1"/>
     <project path="system/libhwbinder" name="android_system_libhwbinder" remote="TeamWin" revision="android-12.1"/>
     <project path="system/security" name="android_system_security" remote="PitchBlackRecoveryProject" revision="android-12.1"/>
