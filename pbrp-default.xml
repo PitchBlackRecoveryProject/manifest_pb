@@ -99,6 +99,9 @@
     <!-- Include ntfs_3g for NTFS support -->
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1"/>
 
+    <!-- Include for zip support -->
+    <project path="external/zip" name="android_external_zip" remote="TeamWin" revision="android-12.1"/>
+
     <!-- Include for legacy wrappedkey support -->
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="LineageOS" revision="lineage-19.1" />
 
